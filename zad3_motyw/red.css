@@ -25,6 +25,7 @@ body {
   color: var(--text-dark);
   background-color: var(--bg-light);
   padding: 40px 20px;
+	font-style: italic;
 }
 
 body > * {
@@ -38,7 +39,7 @@ body > * {
 header {
   padding-top: 50px;
   padding-bottom: 30px;
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 20px dottted var(--primary-color);
 }
 
 .kontakt {
@@ -62,6 +63,7 @@ header {
   color: var(--text-light);
   margin-bottom: 5px;
   font-size: 0.95rem;
+font-style: italic;
 }
 
 .kontakt__text--blue {
