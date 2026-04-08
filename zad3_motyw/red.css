@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #dc2626; /* zielony odcień */
+  --primary-color: #dc2626; /* czerwony odcień */
   --text-dark: #1f2937;
   --text-light: #6b7280;
-  --bg-light: #f3f4f6;
+  --bg-light: #FF7F7F;
   --white: #ffffff;
   --section-spacing: 40px;
 }
