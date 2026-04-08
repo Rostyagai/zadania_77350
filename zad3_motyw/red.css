@@ -55,6 +55,7 @@ header {
   margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--primary-color);
+	border: 5px solid red;
 }
 
 .kontakt__text {
