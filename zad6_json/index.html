@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 6 - Dynamiczne Koty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Kocia Encyklopedia</h1>
+        <p>Dane pobierane dynamicznie z zewnętrznego API JSON</p>
+    </header>
+
+    <main class="container">
+        <!-- Lista 1: Dynamiczne tagi temperamentu -->
+        <section class="filters">
+            <h3>Popularne cechy charakteru:</h3>
+            <div id="temperamentList" class="tag-container">
+                <span class="loader-text">Ładowanie cech...</span>
+            </div>
+        </section>
+
+        <!-- Lista 2: Dynamiczna galeria kart -->
+        <section id="catGallery" class="gallery">
+            <div class="loader"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
