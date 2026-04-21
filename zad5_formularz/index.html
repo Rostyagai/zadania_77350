@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Dodane id="theme-style", aby JS mógł go znaleźć -->
+    <link id="theme-style" rel="stylesheet" href="red.css" />
+    <title>Zd 1 CV - 77350</title>
+  </head>
+  <body>
+    <header>
+      <section class="kontakt">
+        <div>
+          <h1 class="kontakt__title">OLEKSANDR ROSTIAHAI</h1>
+          <a class="kontakt__text" href="mailto:rostyagai.dev@smail.com"
+            >Rostyagai.dev@gmail.com</a
+          >
+          <a class="kontakt__text" href="tel:575472966">575 472 966</a>
+          <a
+            class="kontakt__text kontakt__text--blue"
+            href="https://github.com/Rostyagai/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+          <a
+            class="kontakt__text kontakt__text--blue"
+            href="https://www.linkedin.com/in/alexander-rostiahai/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <p class="kontakt__text">Lokalizacja: Warszawa</p>
+        </div>
+        <img
+          width="250"
+          height="250"
+          class="kontakt__photo"
+          src="./img/main.jpg"
+          alt="My portrait photo"
+        />
+      </section>
+    </header>
+
+    <main>
+      <!-- NOWE: Panel z przyciskami interakcji -->
+      <div style="margin: 20px; text-align: center">
+        <button id="btn-theme" class="btn">Zmień motyw (Czerwony/Zielony)</button>
+        <button id="btn-toggle-projects" class="btn">Ukryj/Pokaż Projekty</button>
+      </div>
+
+      <section class="o-mnie">
+        <h2 class="section__title">O mnie</h2>
+        <p class="section__text">
+          Wysoko zaangażowany i pełen pasji student I roku informatyki z
+          6-miesięcznym praktycznym doświadczeniem...
+        </p>
+      </section>
+
+      <section class="umiejętności">
+        <h2 class="section__title">Umiejętności</h2>
+        <ul class="section__list">
+          <li class="section__list-item"><p class="section__text">HTML</p></li>
+          <li class="section__list-item"><p class="section__text">CSS</p></li>
+          <li class="section__list-item">
+            <p class="section__text">JAVASCRIPT</p>
+          </li>
+          <li class="section__list-item">
+            <p class="section__text">SHOPIFY LIQUID</p>
+          </li>
+          <li class="section__list-item">
+            <p class="section__text">WORDPRESS + PHP</p>
+          </li>
+          <li class="section__list-item"><p class="section__text">SASS</p></li>
+          <li class="section__list-item">
+            <p class="section__text">BOOTSTRAP</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="doświadczenie">
+        <h2 class="section__title">Doświadczenie</h2>
+        <ul class="section__list">
+          <li class="section__list-item">
+            <article class="experience">
+              <h3 class="experience__title">Shopify liquid developer</h3>
+              <p class="section__text">DogyMart ltd.</p>
+              <p>Luty 2024 - Lipiec 2024</p>
+            </article>
+          </li>
+          <li class="section__list-item">
+            <article class="experience">
+              <h3 class="experience__title">Barista</h3>
+              <p class="section__text">Magia D' Italia</p>
+              <p>Marzec 2026 - teraz</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="edukacja">
+        <h2 class="section__title">Edukacja</h2>
+        <h3 class="edukacja__title">Akademia finansów i biznesu Vistula</h3>
+        <p class="section__text">Informatyka</p>
+        <p class="section__text">2025-2028</p>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Dodane id="projects-section" do ukrywania -->
+      <section class="projekty" id="projects-section">
+        <h2 class="section__title">Projekty</h2>
+        <ul class="section__list">
+          <li class="section__list-item">
+            <article class="projekt-item">
+              <h3 class="projekt-item__title">DogyMart - sklep internetowy</h3>
+              <p class="section__text">DogyMart ltd.</p>
+              <a
+                href="https://drive.google.com/file/d/1ZHJFlsQFeyXeZNy3UggCXZs3kw6ySFso/view"
+                class="projekt-item__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Demo link</a
+              >
+            </article>
+          </li>
+          <li class="section__list-item">
+            <article class="projekt-item">
+              <h3 class="projekt-item__title">
+                Fibo pasta bar - sklep internetowy
+              </h3>
+              <p class="section__text">Pet-projekt</p>
+              <a
+                href="https://rostyagai.github.io/FIBO-Pasta-Bar/"
+                class="projekt-item__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Demo link</a
+              >
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- NOWE: Sekcja Kontakt z formularzem -->
+<section class="kontakt-formularz">
+  <h2 class="section__title">Formularz kontaktowy</h2>
+  <form id="contact-form" novalidate>
+    <div class="form-group">
+      <label for="first-name">Imię:</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Twoje imię">
+      <span class="error-msg" id="first-name-error"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="last-name">Nazwisko:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Twoje nazwisko">
+      <span class="error-msg" id="last-name-error"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="user-email">E-mail:</label>
+      <input type="email" id="user-email" name="user-email" placeholder="example@mail.com">
+      <span class="error-msg" id="user-email-error"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="user-message">Wiadomość:</label>
+      <textarea id="user-message" name="user-message" rows="4" placeholder="Wpisz swoją wiadomość..."></textarea>
+      <span class="error-msg" id="user-message-error"></span>
+    </div>
+
+    <button type="submit" class="btn btn--send">Wyślij wiadomość</button>
+    <p id="form-success" style="color: green; display: none; margin-top: 10px; font-weight: bold;">
+      Formularz został wysłany poprawnie!
+    </p>
+  </form>
+</section>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
